@@ -1,0 +1,630 @@
+/* RESET BASICO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: sans-serif;
+
+    /* border: solid 2px greenyellow; */
+}
+
+/* ESTILOS GENERALES */
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; */
+    background-image: url("../images/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* border:solid red; */
+}
+
+.subtitulo__formateado{
+    color: white;
+    padding: 1%;
+    background-color: orange;
+    text-align: center;
+    opacity:.8;
+    width: 100%;
+    border-bottom: rgb(216, 115, 0) solid 4px;
+}
+
+.texto__formateado{
+    font-family: 'Balsamiq Sans' !important; /* PORQUE NO LA TOMA? */
+    font-weight: bold;
+    letter-spacing: .5px;
+    padding: 4% 7%;
+    background-color: #fff;
+    opacity: .8;
+    color:rgb(15, 46, 37);
+    /* height: auto; */
+}
+
+.fondo__verde{
+    color: rgb(213, 235, 213);
+    background-image: linear-gradient(to bottom, rgb(47, 161, 47), rgb(15, 46, 37));
+    width: 100%;
+    height: auto;
+    padding: 2% 5%;
+    text-align: center;
+    opacity: .9;
+}
+
+.fondo__naranja{
+    color: rgb(213, 235, 213);
+    background-image: linear-gradient(to bottom, rgb(218, 131, 0), rgb(102, 46, 0));
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+    opacity: .9;
+}
+
+.foto__miniatura{
+    margin-right: 2%;
+    border-radius: 100%;
+    width: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.959);
+    font-weight: bold;
+}
+
+/* BARRA DE NAVEGACION */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+
+    /* width: 60%; */
+    height: 5%;
+    border-radius: 0px 0px 70px 0px;
+    background-color:white;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px .8px rgb(26, 156, 69);
+    opacity: .5;
+    transition: 1s;
+}
+
+nav:hover{
+    opacity: .87;
+    transition: 1s;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    color:rgb(0, 128, 58);
+    padding: 1% 10px;
+}
+
+nav ul li a:hover{
+    color:rgba(255, 255, 255, .9);
+    background-color: rgba(0, 128, 58, 0.9);
+    transition: .3s;
+}
+
+/* BOTON SUMATE */
+
+.sumate{
+    width: 70px;
+    position: fixed;
+    right: 3px;
+    top: 3px;
+    z-index: 1;
+    transition: .3s;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 3px rgb(26, 156, 69);
+    opacity: .8;
+}
+
+.sumate:hover{
+    transform: scale(1.5) translate(-10px, 10px);
+    opacity: 1;
+    box-shadow: 0px 0px 120px 40px rgb(255, 222, 34);
+    filter: contrast(1.2);
+    transition: .3s;
+}
+
+/* CABECERA Y PRESENTACION */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    background-image: url("../images/galeria_img1.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: saturate(95%);
+}
+
+.Bienvenida{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor__bienvenida{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bienvenida__texto{
+    width: 38%;
+    color: rgb(0, 128, 79);
+    text-shadow: 
+    -2px -2px 0 white,
+    2px -2px 0 white,
+    -2px 2px 0 white,
+    2px 2px 0 white;
+    font-weight: bolder;
+    font-size:1.3rem;
+    /* margin:50px; */
+    padding:140px;
+
+    border: rgba(255, 255, 255, 0.575) dotted 1px;
+}
+
+.bienvenida__logo{
+    width: 38%;    /* Al tener mucho margen el png si le damos menos de 38% empuja la img fuera el layout */
+
+    border: rgba(255, 255, 255, 0.61) dotted 1px;
+}
+
+.bienvenida__logo img{
+    width: 100%; /*350px*/
+}
+
+/* PROVERBIOS IRLANDESES */
+
+/* PROXIMOS EVENTOS */
+
+.eventos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border:solid;
+}
+
+
+.evento--pasados{
+    display: flex;
+    width: 28%;/*335px;*/
+    height: auto;
+}
+
+.evento--pasados img{
+    width: 100%; /*330px;*/
+    height: auto;
+    transition: .4s;
+    opacity: .6;
+}
+
+.evento--pasados img:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.evento--otros{
+    display: flex;
+    width: 28%;
+    height: auto;
+}
+
+.evento--otros img{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+    opacity: .6;
+}
+
+.evento--otros img:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.evento--proximo{
+    display: flex;
+    width: 30%; /*365px;*/
+    height: auto;
+    margin: 3% 0;
+}
+
+.evento--proximo img{
+    width: 100%; /*360px;*/
+    height: auto;
+    box-shadow: 0px 0px 15px 3px rgb(255, 238, 0);
+    transition: 1s;
+}
+
+.evento--proximo img:hover{
+    width: 100%;
+    height: auto;
+    transform: scale(1.12);
+    transition: .4s;
+    box-shadow: 0px 0px 100px 10px rgb(255, 196, 87);
+    border: solid 2px rgba(255, 166, 0, 0.603);
+    filter: contrast(2);
+
+}
+
+/* NUESTRA ESCUELA */
+
+section>div>ul{
+    margin: 0 0 0 30px;
+}
+
+/* GELERIA DE FOTOS */
+
+.galeriaFotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor__fotos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    width: 20%;
+    height: 500px;
+    transition: .5s;
+    filter: saturate(50%);
+}
+
+.foto:hover{
+    width: 80%;
+    transition: .5s;
+    filter: saturate(100%);
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* BIOGRAFIA DEL DIRECTOR */
+
+.biografia__cabecera{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.biografia__cuerpo{
+    display: flex;
+    
+    height: auto;  /* 150px contraido */
+    font-weight: bold;
+    letter-spacing: .5px;
+    padding: 60px 100px 100px;
+    color:rgb(15, 46, 37);
+}
+
+.boton__largo{
+    display: flex;
+    margin-top: 17px;
+    font-size: 1.3rem;
+    color: orange;
+    justify-content: center;
+    border: orange solid 2px;
+    border-radius: 12px;
+    padding: 7px;
+    transition: .3s
+}
+
+.boton__largo:hover{
+    background-color: orange;
+    color: white;
+    transition: .3s
+}
+
+/* SOBRE NUESTROS MIEMBROS */
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+    padding: 30px 0;
+    text-align: center;
+
+    position: relative; /* Solo a efecto de posicionar la ventana de creditos */
+}
+
+.footerItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    
+}
+
+/* SOCIAL MEDIA Y LEGALES */
+
+.SMyLegales{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 64px 44.5px 44.5px;
+
+    width: 30%;
+    border-radius: 20px;
+    background-color: rgba(33, 165, 110, 0.082);
+    justify-content: center;
+}
+
+/* .SMyLegales div{
+    background-color: salmon;
+    border:solid white 1px;
+    
+} */
+
+.legal__font{
+    font-size: .8rem;
+}
+
+.creditos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/5;
+}
+
+.legales{
+    display: flex;
+    grid-column: 1/5;
+    align-items: end;
+}
+
+.socialMedia__contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia__img{
+    width: 52px;
+}
+
+/* RED-GEM DEV-DESIGNER */
+.redGem__container{
+    display: flex;
+    align-items: end;
+}
+
+
+/* PATROCINADORES */
+.patrocinadores{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 64px 64px 25px;
+
+    width: 30%;
+    background-color: rgba(33, 165, 110, 0.082);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.patrocinadores div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border:dotted rgba(255, 255, 255, 0.164) 1px;
+    
+}
+
+.patrocinador__1 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:64px;
+}
+
+.patrocinadores__link{
+    font-size: .8rem;
+    grid-column: 1/5;
+}
+
+/* VENTANA FLOTANTE CREDITOS */
+
+.ventana__creditos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 92px;
+    right: 31%;
+
+    width: 40%;
+    min-height: 220px;
+    border-radius: 20px 20px 20px 0;
+    height: auto;
+
+    border: rgb(51, 146, 75) solid 4px;
+    background-color: #fff;
+
+    visibility: hidden;
+}
+
+.ventana__creditos div a, .ventana__creditos div h2{
+    color:black;
+}
+
+.ventana__creditos div h2{
+    margin-bottom: 10px;
+}
+
+.ventana__creditos div{
+    text-align: left;
+    width: 90%;
+}
+
+.ventana__creditos div ul{
+    list-style: none;
+}
+
+.creditos h4{
+    cursor:alias;
+}
+
+/* CLASES ASIGNADAS POR JS */
+
+.visible{
+    visibility: visible;
+}
+
+/* BREAK POINTS -Responsive Design- */
+
+@media screen and (max-width:960px){
+
+    body{
+        font-size: 14px;
+    }
+
+    .texto__formateado{
+        font-weight: bold;
+        letter-spacing: .4px;
+        padding: 40px 70px;
+        background-color: #fff;
+        opacity: .8;
+        color:rgb(15, 46, 37);
+        /* height: auto; */
+    }
+
+    /* GALERIA @ */
+    .foto{
+        height: 370px;
+    }
+
+    /* CABECERA @ */
+    header{
+        height: 400px;
+    }
+
+    /* @ VENTANA FLOTANTE CREDITOS @ */
+    .ventana__creditos{
+        bottom: 100px;
+        right: 28%;
+    
+        width: 40%;
+        min-height: 120px;
+    }
+    
+    .ventana__creditos div h2{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .ventana__creditos div{
+        text-align: left;
+        width: 90%;
+    }
+
+    .ventana__creditos div ul li{
+        font-size: .6rem;
+        
+    }
+    
+    /* FOOTER @ */
+    footer{
+        justify-content: space-around;
+    }
+
+    .redGem__container{
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 730px){
+
+
+   /* GENERALES @ */
+    .subtitulo__formateado{
+        padding: 0;
+    }
+    
+    .texto__formateado{
+        letter-spacing: .2px;
+        padding: 4% 7%;
+    }
+    
+    .fondo__verde{
+        padding: 1% 2%;
+    }
+    
+    .fondo__naranja{
+        padding: 10px 0;
+    }
+    
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .patrocinadores, .SMyLegales{
+        width: 80%;
+    }
+
+    .redGem__container{
+        width: 80%;
+        justify-content: center;
+        margin-top: 30px;
+        order: 3;
+    }
+
+
+    /* GALERIA @ */
+    .foto{
+        height: 250px;
+    }
+
+    /* CABECERA @ */
+    header{
+        height: 300px;
+    }
+
+    .bienvenida__texto{
+        width: 60%;
+        font-size: .7rem;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+}

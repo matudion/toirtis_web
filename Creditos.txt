@@ -1,0 +1,14 @@
+LOGO FACEBOOK
+<a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos">Facebook iconos creados por Pixel perfect - Flaticon</a>
+
+LOGO INSTAGRAM
+<a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos">Instagram iconos creados por Pixel perfect - Flaticon</a>
+
+LOGO WA
+<a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp iconos creados por Fathema Khanom - Flaticon</a>
+
+LOGO GMAIL
+<a href="https://www.flaticon.es/iconos-gratis/gmail" title="gmail iconos">Gmail iconos creados por Pixel perfect - Flaticon</a>
+
+LOGO YOUTUBE
+<a href="https://www.flaticon.es/iconos-gratis/youtube" title="youtube iconos">Youtube iconos creados por Md Tanvirul Haque - Flaticon</a>

@@ -1,0 +1,27 @@
+26-05 Primer presentable, maquetacion basica con imagenes de ejemplo, footer solo posicionado, sin implementaciones js, problemas para agregar las fuentes de manera local.
+
+26-05B Hice un mamarracho donde tube que hacer como 20 undo asi que espero este respaldo este correcto, el bardo fue con la parte de la cabecera pero parece estar todo bien ahora.
+Agregue la seccion de grupo y le di un semi hidden a la bio de lu ademas de un haver a ambos para que se entienda que tienen accion(aun no implemente js).
+
+26-05C Corregi unas cosas del despelote anterior, yo le tendria mas fe a esta version que a la anterior, ademas cambie un par de nombres de class por unas mas descriptivas por lo que el codigo esta mas preparado para las nuevas implementaciones.
+
+26-05D Un avance enorme: El footer y el header casi terminados!
+
+30-05 Todo excelente, faltaria un pequeño detalle de distribucion de elementos en el header, reconfigurar el footer segun las indicaciones de luciano y desarrollar los mensajes random en js.
+
+30-05b Terminada la maquetacion de la seccion "patrocinadores", ahora continuare dandole forma al footer.
+
+30-05c Footer terminado. Siguiente paso desarrollo js.
+
+31-05 Terminadas las funcionalidades en Java Script. Todo luce muy bien. Falta optimizar imagenes para la web, crear legales, creditos externos y desarrollar los @media.
+
+31-05b Completado legales y creditos externos.
+
+
+
+
+
+
+
+
+
