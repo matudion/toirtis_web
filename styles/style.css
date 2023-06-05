@@ -39,6 +39,7 @@ body{
 .texto__formateado{
     font-family: 'Balsamiq Sans' !important; /* PORQUE NO LA TOMA? */
     font-weight: bold;
+    font-size: 1rem;
     letter-spacing: .5px;
     padding: 4% 7%;
     background-color: #fff;
@@ -508,7 +509,8 @@ footer{
     visibility: visible;
 }
 
-/* BREAK POINTS -Responsive Design- */
+
+/* BREAK POINTS -Responsive Design- ************************************************************************/
 
 @media screen and (max-width:960px){
 
@@ -517,13 +519,8 @@ footer{
     }
 
     .texto__formateado{
-        font-weight: bold;
         letter-spacing: .4px;
-        padding: 40px 70px;
-        background-color: #fff;
-        opacity: .8;
-        color:rgb(15, 46, 37);
-        /* height: auto; */
+        /* padding: 40px 70px; */
     }
 
     /* GALERIA @ */
@@ -570,15 +567,16 @@ footer{
     }
 }
 
-@media screen and (max-width: 730px){
-
+@media screen and (max-width: 730px){  /*******************************/
 
    /* GENERALES @ */
     .subtitulo__formateado{
+        font-size: 1rem;
         padding: 0;
     }
     
     .texto__formateado{
+        font-size: .8rem;
         letter-spacing: .2px;
         padding: 4% 7%;
     }
@@ -591,6 +589,9 @@ footer{
         padding: 10px 0;
     }
     
+    .biografia__cabecera{
+        font-size: 1rem;
+    }
 
     footer{
         flex-direction: column;
