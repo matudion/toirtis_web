@@ -1,0 +1,11 @@
+[33mcommit 829ca6aafd469509b9b1cefb83087a240a6f508c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: matudion <matiasmontalto@gmail.com>
+Date:   Sun Jun 4 21:24:17 2023 -0300
+
+    Agregada configuracion para resoluciones mayores a 1328px
+
+[33mcommit a71da94eefaf4002c5c11aef36436691c18c0db2[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: matudion <matiasmontalto@gmail.com>
+Date:   Sun Jun 4 20:41:54 2023 -0300
+
+    Primer commit del proyecto: Ultimos cambios cambio de flujo del footer y otros ajustes de estilo con @medias.
