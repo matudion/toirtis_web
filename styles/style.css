@@ -121,6 +121,87 @@ nav ul li a:hover{
     transition: .3s;
 }
 
+/* BOTON DEL MENU DESPLEGABLE */
+
+.menu__boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #fff;
+    border-radius: 5px;
+   
+    z-index: 30;
+    transition: .3;
+    opacity: .7;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.menu__boton:hover{
+    box-shadow: 0px 0px 5px 3px green;
+    transition: .4s;
+}
+
+.menu__boton img{
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+/* MENU DE NAVEGACION DESPLEGABLE */
+
+.nav__desplegable{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: fixed;
+    /* bottom: 92px; */ top: 0;
+    /* right: 31%; */ left: 0;
+
+    width: 150px;
+    min-height: 180px;
+    border-radius: 0px 20px 20px 20px;
+    height: auto;
+
+    border: rgb(51, 146, 75) solid 4px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 255, 255, 0.986),  rgba(255, 255, 255, 0.671));
+    color:black;
+    
+    z-index: 31;
+    visibility: hidden;
+    opacity: .99;
+    transition: .5;
+}
+
+.nav__desplegable ul{
+    margin: 5px;
+}
+
+.nav__desplegable ul li{
+    list-style: none;
+}
+
+.nav__desplegable ul li a{
+    display: block;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+}
+
+.nav__desplegable ul li a:hover{
+    color: white;
+    background-color: green;
+}
+
 /* BOTON SUMATE */
 
 .sumate{
@@ -506,8 +587,12 @@ footer{
 /* CLASES ASIGNADAS POR JS */
 
 .visible{
-    visibility: visible;
+    visibility: visible !important;
 }
+
+/* .invisible{
+    display: flex;
+} */
 
 
 /* BREAK POINTS -Responsive Design- ************************************************************************/
@@ -597,9 +682,6 @@ footer{
         padding: 4px;
         transition: .3s
     }
-
-
-
 
 
     
@@ -749,8 +831,19 @@ footer{
         font-size: .7rem;
     }
 
+
+    /* MENU DESPLEGABLE */
+
+    nav{
+        visibility: hidden;
+        /* display: none; */
+    }
+
+    .menu__boton{
+        visibility: visible;
+    }
+
 }
 
-@media screen and (max-width: 480px){ /*************************************/
-
-}
+/* @media screen and (max-width: 480px){ 
+} */

@@ -2,6 +2,7 @@
 var datoCulturaIrlandesa = document.getElementById('datoCulturaIrlandesa');
 var titulo = document.getElementById('titulo');
 var parrafo = document.getElementById('parrafo');
+
 var numeroAleatorio = Math.floor(Math.random()*10)+1;
 
 //CODIGO
@@ -82,7 +83,7 @@ function datoRandom(){
     }
 }
 
-
+// VENTANA CREDITOS
 var ventanaCreditos = document.getElementById('ventanaCreditos');
 
 function mostrar(){
@@ -93,4 +94,21 @@ function esconder(){
     ventanaCreditos.classList.remove('visible');
 }
 
+
+//MENU DE NAVEGACION DESPLEGABLE
+var menuNav = document.getElementById('navDesplegable');
+var botonNav = document.getElementById('menu_btn');
+
+function mostrarNav(){
+    botonNav.classList.remove('visible');
+    menuNav.classList.add('visible');
+    
+}
+
+function esconderNav(){
+    menuNav.classList.remove('visible');
+}
+
+
+// CODIGO
 datoRandom();
