@@ -78,7 +78,7 @@ function datoRandom(){
             parrafo.innerHTML = "Que seas pobre en desgracias, rico en bendiciones, lento para hacer enemigos y rápido para las amistades.";
         }else{
             titulo.innerHTML = "&#x1F340; Proverbio Irlandes.";
-            parrafo.innerHTML = "Que el camino se abra a tu paso, que el viento sople siempre a tus espaldas, que el sol brille sobre tu rostro, y que la lluvia caiga suave sobre tus campos. Que el camino se abra a tu paso, que el viento sople siempre a tus espaldas, que el sol brille sobre tu rostro, y que la lluvia caiga suave sobre tus campos.";
+            parrafo.innerHTML = "Que el camino se abra a tu paso, que el viento sople siempre a tus espaldas, que el sol brille sobre tu rostro, y que la lluvia caiga suave sobre tus campos.";
         }
     }
 }

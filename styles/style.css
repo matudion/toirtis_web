@@ -136,6 +136,7 @@ nav ul li a:hover{
 
     background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px 6px green;
    
     z-index: 30;
     transition: .3;
@@ -145,7 +146,7 @@ nav ul li a:hover{
 }
 
 .menu__boton:hover{
-    box-shadow: 0px 0px 5px 3px green;
+    box-shadow: 0px 0px 5px 3px rgb(246, 197, 3);
     transition: .4s;
 }
 
@@ -240,7 +241,7 @@ header{
 }
 
 .Bienvenida{
-    display: flex;
+    display: none;/* display: flex; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -266,7 +267,6 @@ header{
     2px 2px 0 white;
     font-weight: bolder;
     font-size:1.3rem;
-    /* margin:50px; */
     padding:140px;
 
     border: rgba(255, 255, 255, 0.575) dotted 1px;
@@ -406,7 +406,7 @@ section>div>ul{
 .biografia__cuerpo{
     display: flex;
     
-    height: auto;  /* 150px contraido */
+    height: auto;  
     font-weight: bold;
     letter-spacing: .5px;
     padding: 60px 100px 100px;
@@ -467,12 +467,6 @@ footer{
     background-color: rgba(33, 165, 110, 0.082);
     justify-content: center;
 }
-
-/* .SMyLegales div{
-    background-color: salmon;
-    border:solid white 1px;
-    
-} */
 
 .legal__font{
     font-size: .8rem;
@@ -698,99 +692,38 @@ footer{
 }
 
 .evento__proximo{
-    pointer-events: none;
-    margin:0;
-    /* display: grid;
-    grid-column: 1/3;
-    grid-row: 1/2;
+    /* pointer-events: none; */
 
-    height: auto;
-    margin: 1%; */
-    width: 70%;
+    margin:0;
+    margin: 1.8%; 
+    width: 57%;
     max-width: 440px;
     order: 1;
 }
 
-.evento__otros{
-    pointer-events: none;
+.evento__proximo img:hover{
+    transform: scale(1.08);
+    transition: .3s;
+}
 
-    /* display: grid;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    height: auto;*/
-    margin: 1%; 
-    width: 65%;
+
+.evento__otros{
+    /* pointer-events: none; */
+
+    margin: .9%; 
+    width: 54%;
     max-width: 440px;
     order: 2;
 }
 
 .evento__pasados{
-    pointer-events: none;
+    /* pointer-events: none; */
 
-    /* display: grid;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    height: auto;
-    margin: 1%;  */
-    width: 60%;
+    margin: .9%;  
+    width: 54%;
     max-width: 420;
     order: 3;
-
-    /* margin: 0; */
 }
-
-/* .evento__pasados img{
-    width: 100%; 
-    height: auto;
-    transition: .4s;
-    opacity: .6;
-}
-
-.evento__pasados img:hover{
-    opacity: 1;
-    transition: 1s;
-}
-
-
-.evento__otros img{
-    width: 100%;
-    height: auto;
-    transition: .4s;
-    opacity: .6;
-}
-
-.evento__otros img:hover{
-    opacity: 1;
-    transition: 1s;
-}
-
-
-.evento__proximo img{
-    width: 100%; 
-    height: auto;
-    box-shadow: 0px 0px 15px 3px rgb(255, 238, 0);
-    transition: 1s;
-}
-
-.evento__proximo img:hover{
-    width: 100%;
-    height: auto;
-    transform: scale(1.12);
-    transition: .4s;
-    box-shadow: 0px 0px 100px 10px rgb(255, 196, 87);
-    border: solid 2px rgba(255, 166, 0, 0.603);
-    filter: contrast(2);
-
-} */
-
-
-
-
-
-
-
-
-
 
 /* DIRECTOR/MIEMBROS */
 
@@ -820,7 +753,7 @@ footer{
 
     /* GALERIA @ */
     .foto{
-        height: 250px;
+        height: 300px;
     }
 
     /* CABECERA @ */

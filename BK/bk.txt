@@ -17,6 +17,8 @@ Agregue la seccion de grupo y le di un semi hidden a la bio de lu ademas de un h
 
 31-05b Completado legales y creditos externos.
 
+*DESDE AQUI EL CONTROL DE VERSIONES CONTROL DE VERSIONES SE REALIZARA CON GIT.
+
 
 
 
